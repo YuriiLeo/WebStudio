@@ -98,7 +98,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     min-width: 768px;
-    background: tomato;
   }
 }
 
@@ -528,6 +527,12 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
 }
 
 .about__list {
