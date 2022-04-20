@@ -1,0 +1,42 @@
+.hang__section {
+    padding-bottom: 0;
+}
+.hang__item {
+    width: calc((100%-90)/4);
+    margin-right: 30px;
+
+    &:last-child {
+    margin-right: 0;
+}
+}
+
+.hang__thumb {
+    padding: 0;
+    border: none;
+    background-color: var(--background-third);
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    @extend %flex;
+    fill: var(--title-text-color);
+
+}
+.hang__icon {
+    width: 70px;
+    height: 70px;
+
+}
+
+.hang__subtitle {
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    @include fonts14(700, 14px, 1.14);
+    text-transform: uppercase;
+}
+
+.hang__text {
+    margin-bottom: 0;
+    @include fonts14;
+}

@@ -1,0 +1,31 @@
+@import "./reset";
+body {
+    font-family: var(--main-font);
+    background-color: var(--background-first);
+    color: var(--primare-text-color);
+}
+
+img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+}
+
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.basic__title {
+    margin-bottom: 50px;
+
+    color: var(--title-text-color);
+    @include fonts;
+    text-align: center;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
