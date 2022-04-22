@@ -2,6 +2,10 @@
     background-color: var(--background-third);
 }
 
+.team__list {
+    display: flex;
+}
+
 .team__item {
     width: calc((100%-90)/4);
     margin-right: 30px;

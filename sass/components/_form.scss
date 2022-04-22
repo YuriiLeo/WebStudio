@@ -17,14 +17,17 @@ display: block;
 }
 
 .form__title {
-    @include fonts(700, 20px, 1.15, 0.03em);
+    @include fonts(700, 20px, 1.5, 0.03em);
     text-align: center;
     
     color: var(--title-text-color);
     margin: 0;
     padding: 0;
     margin-bottom: 12px;
-    
+
+    @media screen and (min-width:1200px) {
+        @include fonts(700, 20px, 1.15, 0.03em);
+    }
 }
 
 .form__field {
@@ -82,14 +85,18 @@ display: block;
     height: 18px;
     fill: var(--title-text-color);
     transition: fill 250ms var(--kubik-rubik);
-}
+    }
     &--check {
+    left: 0;   
     width: 16px;
     height: 15px;
     border: 2px solid #2a2a2a;
     border-radius: 4px;
-    fill: var(--background-first)
-}
+    fill: var(--background-first);
+      @media screen and (min-width: 1200px) {
+        left: 12px;
+      }
+    }
 }
 
 .form__comment {
@@ -130,10 +137,15 @@ display: block;
 
 
 .form__policy {
-    @include fonts14;
-    padding-left: 35px;
+    @include fonts14(null, 12px, 1.17, 0.03em);
+    
+    padding-left: 24px;
     
     color: var(--primare-text-color);
+    @media screen and (min-width: 1200px) {
+        @include fonts14;
+        padding-left: 35px;
+    }
 }
 
 .form__link {

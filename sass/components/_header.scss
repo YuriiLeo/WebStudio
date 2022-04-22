@@ -3,6 +3,8 @@
 }
 
 .header__container {
+    position: relative;
+    
     display: flex;
     align-items: center;
 }
@@ -13,11 +15,17 @@
 }
 
 .nav__list {
+    display: flex;
+    
     margin-left: 93px;
 
     & .nav__link.curent {
     color: var(--accent-color);  
-}
+    }
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
 
 .nav__item {
@@ -42,8 +50,15 @@
 }
 
 .contacts {
-    display: flex;
     margin-left: auto;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
 
 }
 
@@ -58,5 +73,11 @@
 }
 
 .contacts__item +.contacts__item {
-margin-left: 50px;
+     @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+        margin-top: 10px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 50px;
+    }
 }

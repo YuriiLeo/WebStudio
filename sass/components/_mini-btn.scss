@@ -1,5 +1,5 @@
 
- .btn-close {
+ .mini-btn {
     position: absolute;
 	top: 8px;
     right: 8px;
@@ -29,5 +29,20 @@
 }
 } 
 
+.header__mini-btn {
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
 
+    @media screen and (min-width:768px) {
+        display: none;
+    }
 
+    &:hover .projects__overlay,
+    &:focus .projects__overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+}

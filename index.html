@@ -18,6 +18,11 @@
    <div class="container header__container">
     <nav class="nav">
       <a class="logo logo__header link" href="/" lang="en">Web<span class="logo--dark">Studio</span></a>
+      <button aria-label="Menu" class="mini-btn header__mini-btn">
+               <svg class="mini-btn__icon"> 
+                <use href="./imges/icon.svg#icon-menu-mob"></use>
+                <use href="./imges/icon.svg#icon-close-mob "></use>
+               </svg></button>
       <ul class="nav__list list">
         <li class="nav__item"><a href="./index.html" class="nav__link link curent">Студия</a></li>
         <li class="nav__item"><a href="./portfolio.html" class="nav__link link">Портфолио</a></li>
@@ -36,6 +41,10 @@
         <use href="./imges/icon.svg#icon-smartphone"></use>
       </svg> +38 096 111 11 11</a></li>
   </ul>
+  <!-- <div class="overlay projects__overlay">
+                  <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div> -->
    </div>
    </header>
   <main>
@@ -47,8 +56,8 @@
       </div>
       <div class="hero__backdrop is-hidden" data-modal>
         <div class="hero__modal">
-              <button aria-label="Close" class="btn-close" data-modal-close>
-               <svg class="btn-close__icon"> 
+              <button aria-label="Close" class="mini-btn" data-modal-close>
+               <svg class="mini-btn__icon"> 
                 <use href="./imges/icon.svg#icon-close "></use>
                </svg></button>
            <form class="form hero__form" autocomplete="off">
@@ -179,10 +188,10 @@
     </div>
   </section>
   <!-- Наша команда -->
-  <section class="team section">
+  <!-- <section class="team section">
     <div class="container">
       <h2 class="basic__title">Наша команда</h2>
-      <ul class="list">
+      <ul class="team__list list">
         <li class="team__item">
           <img src="./imges/img04.jpg" alt="фото Игорь Демьяненко" width="270" height="260">
           <div class="team__container">
@@ -333,8 +342,8 @@
         </li>
       </ul>
     </div>
-  </section>
-  <section class="cliens section" >
+  </section> -->
+  <!-- <section class="cliens section" >
   <div class="container">
     <h2 class="basic__title">Постоянные клиенты</h2>
     <ul class="cliens__list list">
@@ -382,10 +391,10 @@
       </li>
     </ul>
   </div>
-  </section>
+  </section> -->
   </main>
   <!-- Подвал -->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div >
         <a class="logo logo__footer link" href="/" lang="en">Web<span class="logo--light">Studio</span></a>
@@ -448,7 +457,7 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <script src="./js/model.js"></script>
   <script src="./js/form-btn.js"></script>
 </body>
