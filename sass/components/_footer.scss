@@ -5,8 +5,21 @@
 }
 
 .footer .container {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+    
+}
+
+.hz {
+     @media screen and (min-width:768px) and (max-width:1199px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+    }
 }
 
 .adress {
@@ -36,11 +49,26 @@
 
 
 .adress__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width:1200px) {
+      margin-bottom: 9px;
+    }
 }
 
 .wrapper {
-    margin-left: 70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width:768px) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width:1200px) {
+      margin-left: 70px;
+    }
+    
 }
 
 .footer__title {
