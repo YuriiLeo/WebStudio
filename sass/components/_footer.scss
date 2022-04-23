@@ -5,7 +5,10 @@
 }
 
 .footer .container {
-    text-align: center;
+    @media screen and (max-width:1199px) {
+      text-align: center;
+    }
+    
 
     @media screen and (min-width:1200px) {
       display: flex;
