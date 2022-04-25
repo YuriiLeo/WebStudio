@@ -193,7 +193,16 @@
       <h2 class="basic__title">Наша команда</h2>
       <ul class="team__list list">
         <li class="team__item">
-          <img src="./imges/img04.jpg" alt="фото Игорь Демьяненко">
+           <picture>
+             <source srcset="./imges/team/team-1-s.webp 1x, ./imges/team/team-1-s@2x.webp 2x" type="image/webp" />
+             <source srcset="./imges/team/team-1-s.jpg 1x, ./imges/team/team-1-s@2x.jpg 2x" 
+             media="(max-width: 767px)" 
+             type="image/jpeg" />
+             <img src="./imges/team/team-1-s.jpg" 
+               alt="фото Игорь Демьяненко" 
+               width=450px
+               height=460px/>
+           </picture>
           <div class="team__container">
             <h3 class="team__after-title">Игорь Демьяненко</h3>
             <p lang="en" class="team__text">Product Designer</p>
@@ -230,7 +239,9 @@
           </div>
         </li>
         <li class="team__item">
-          <img src="./imges/img05.jpg" alt="фото Ольга Репина">
+          <img src="./imges/team/team-2-s.jpg" alt="фото Ольга Репина"
+               width=450px
+               height=460px>
           <div class="team__container">
             <h3 class="team__after-title">Ольга Репина</h3>
             <p lang="en" class="team__text">Frontend Developer</p>
@@ -267,7 +278,9 @@
           </div>
         </li>
         <li class="team__item">
-          <img src="./imges/img06.jpg" alt="фото Николай Тарасов">
+          <img src="./imges/team/team-3-s.jpg" alt="фото Николай Тарасов"
+               width=450px
+               height=460px>>
           <div class="team__container">
             <h3 class="team__after-title">Николай Тарасов</h3>
             <p lang="en" class="team__text">Marketing</p>
@@ -304,8 +317,10 @@
           </div>         
         </li>
          <li class="team__item">
-          <img src="./imges/img07.jpg" 
-               alt="фото Михаил Ермаков">
+          <img src="./imges/team/team-4-s.jpg" 
+               alt="фото Михаил Ермаков"
+               width=450px
+               height=460px>>
           <div class="team__container">
             <h3 class="team__after-title">Михаил Ермаков</h3>
             <p lang="en" class="team__text">UI Designer</p>
