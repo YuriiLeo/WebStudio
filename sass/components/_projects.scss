@@ -1,6 +1,11 @@
 .projects__list {
     margin: -15px;
 
+    @media screen and (max-width:767px) {
+      margin-bottom: -30px;
+    }
+    
+
     @media screen and (min-width:768px) {
       display: flex;
       flex-wrap: wrap;
@@ -9,6 +14,10 @@
 
 .projects__item {
     margin: 15px;
+
+    @media screen and (max-width:767px) {
+      margin-bottom: 30px;
+    }
 
     @media screen and (min-width:768px) {
       width: calc((100% / 2 - 2 * 15px);
@@ -22,7 +31,9 @@
 }
 
 .projects__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow 250ms var(--kubik-rubik);
 
     &:hover,
@@ -31,15 +42,17 @@
     0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+    }
     &:hover .projects__overlay,
     &:focus .projects__overlay {
     opacity: 1;
     transform: translateY(0);
-}
+    }
 }
 
 .projects__content {
+    flex-grow: 1;
+
     padding: 20px 24px;
 
     border-bottom: 1px solid #EEEEEE;
