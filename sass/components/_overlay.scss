@@ -21,10 +21,29 @@
 .overlay__text {
     display: flex;
 
-    padding: 63px 24px 63px 24px;
+    padding: 77px 24px;
     margin: 0;
     @include fonts(400, 18px, 1.56, 0.03em);
     
     color: var(--primary-white-color);
-    background: var(--background-overlay);
+
+    @media screen and (min-width:320px) and (max-width:400px) {
+        padding: 30px 20px;
+        @include fonts(400, 15px, 1.5, 0.02em);
+    }
+    @media screen and (min-width:401px) and (max-width:479px) {
+        padding: 50px 24px;
+        @include fonts(400, 16px, 1.5, 0.03em);
+    }
+
+    @media screen and (min-width:768px) {
+        padding: 49px 24px 77px 24px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 63px 24px;
+    }
+
+
+
 }
