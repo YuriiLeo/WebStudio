@@ -917,7 +917,7 @@ img {
 
 .about__item {
   position: relative;
-  width: calc((100%-60)/3);
+  width: calc((100% - 60) / 3);
   margin-right: 30px;
 }
 
