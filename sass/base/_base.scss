@@ -1,54 +1,50 @@
-@import "./reset";
+@import './reset';
 body {
-    font-family: var(--main-font);
-    background-color: var(--background-first);
-    color: var(--primare-text-color);
+  font-family: var(--main-font);
+  background-color: var(--background-first);
+  color: var(--primare-text-color);
 }
 
 img {
-    display: block;
-    max-width: 100%; 
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section {
-    padding-bottom: 60px;
-    padding-top: 60px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 
-    @media screen and (min-width:1200px) {
-      padding-bottom: 94px;
-      padding-top: 94px;
-    }
+  @include mq(desktop) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .hang__section {
-    @media screen and (min-width:1200px) {
-      padding-bottom: 0;
-    }
+  @include mq(desktop) {
+    padding-bottom: 0;
+  }
 }
 
-
-
 .basic__title {
+  margin-bottom: 30px;
 
-    margin-bottom: 30px;
+  color: var(--title-text-color);
+  @include fonts(700, 28px, 1.17, 0.03em);
+  text-align: center;
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
 
     color: var(--title-text-color);
-    @include fonts (700, 28px, 1.17, 0.03em);
+    @include fonts;
     text-align: center;
-
-    @media screen and (min-width:1200px) {
-      margin-bottom: 50px;
-
-      color: var(--title-text-color);
-      @include fonts;
-      text-align: center;
-    }
-    
+  }
 }
 
 .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }

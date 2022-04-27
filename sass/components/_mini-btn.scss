@@ -1,62 +1,55 @@
+.mini-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
- .mini-btn {
-    position: absolute;
-	top: 8px;
-    right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
 
-	width: 30px;
-	height: 30px;
-    padding: 0;
-    margin: 0;
+  background-color: var(--background-first);
+  cursor: pointer;
+  @extend %flex;
 
-    background-color: var(--background-first);
-    cursor: pointer;
-    @extend %flex;
+  border-radius: 50%;
 
-    border-radius: 50%;
-   
-    @include border(rgba(0, 0, 0, 0.1));
-    transition: fill 250ms var(--kubik-rubik);
-    
-    &:hover,
-    &:focus {
+  @include border(rgba(0, 0, 0, 0.1));
+  transition: fill 250ms var(--kubik-rubik);
+
+  &:hover,
+  &:focus {
     fill: var(--accent-color);
-}
-    &__icon {
-    width: 18px; 
+  }
+  &__icon {
+    width: 18px;
     height: 18px;
-
+  }
 }
-} 
 
 .header-btn {
-    display: inline-flex;
-    height: 40px;
-    width: 40px;
-    border: none;
-    background-color: transparent;
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: transparent;
 
-    z-index: 10;
+  z-index: 10;
 
-    @media screen and (min-width:768px) {
-        display: none;
-    }
+  @include mq(tablet) {
+    display: none;
+  }
 
-    &:hover .projects__overlay,
-    &:focus .projects__overlay {
+  &:hover .projects__overlay,
+  &:focus .projects__overlay {
     opacity: 1;
     transform: translateY(0);
-    }
-
-    &__icon {
-
-    }
+  }
 }
 
 .icon-open {
   opacity: 1;
-   transition: transform 250ms ease, 
-   opacity 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease;
 }
 
 .header-btn.is-active .icon-open {
@@ -65,8 +58,7 @@
 
 .icon-close {
   opacity: 0;
-   transition: transform 250ms ease, 
-   opacity 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease;
 }
 
 .header-btn.is-active .icon-close {

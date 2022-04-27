@@ -1,86 +1,79 @@
 .footer {
-    background-color: var(--background-second);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background-color: var(--background-second);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .container {
-    @media screen and (max-width:1199px) {
-      text-align: center;
-    }
-    
+  @include mq(notDesktop) {
+    text-align: center;
+  }
 
-    @media screen and (min-width:1200px) {
-      display: flex;
-      align-items: baseline;
-    }
-    
+  @include mq(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .adress__wrapper {
-     @media screen and (min-width:768px) {
-      display: flex;
-      justify-content: space-around;
-      align-items: baseline;
-    }
-
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .adress {
-    font-style: normal;
+  font-style: normal;
 }
 
 .adress__list {
-    display: block;
+  display: block;
 }
 
 .adress__link {
-    @include fonts14;
+  @include fonts14;
 
-    color: var(--grey-color);
-    transition: color 250ms var(--kubik-rubik);
+  color: var(--grey-color);
+  transition: color 250ms var(--kubik-rubik);
 
-     &--map {
+  &--map {
     color: var(--primary-white-color);
-}
+  }
 
-     &:hover,
-     &:focus {
+  &:hover,
+  &:focus {
     color: var(--accent-color);
+  }
 }
-}
-
-
 
 .adress__item:not(:last-child) {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 
-    @media screen and (min-width:1200px) {
-      margin-bottom: 9px;
-    }
+  @include mq(desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .wrapper {
-    margin-top: 60px;
-    margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 
-    @media screen and (min-width:768px) {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+  @include mq(tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-    @media screen and (min-width:1200px) {
-      margin-left: 70px;
-    }
-    
+  @include mq(desktop) {
+    margin-left: 70px;
+  }
 }
 
 .footer__title {
-    padding: 0;
-    margin: 0;
-    color: var(--primary-white-color);
-    font-family: var( --main-font) ;
-    @include fonts14(700, 14px, 1.14);
-    text-transform: uppercase;
-    
+  padding: 0;
+  margin: 0;
+  color: var(--primary-white-color);
+  font-family: var(--main-font);
+  @include fonts14(700, 14px, 1.14);
+  text-transform: uppercase;
 }

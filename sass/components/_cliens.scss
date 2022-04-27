@@ -5,7 +5,7 @@
     justify-content: center;
     margin: -15px;
 
-    @media screen and (max-width:1199px) {
+    @include mq(notDesktop) {
         flex-wrap: wrap; 
     }  
 }
@@ -14,7 +14,7 @@
     width: calc((100% / 2 - 2 * 15px);
     margin: 15px;
 
-    @media screen and (min-width:768px) {
+    @include mq(tablet) {
       width: calc((100% / 3 - 2 * 15px);
     }
     

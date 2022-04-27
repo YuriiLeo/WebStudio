@@ -1,46 +1,43 @@
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    opacity: 1;
-    transition: opacity 250ms var(--kubik-rubik),
-    transform 250ms var(--kubik-rubik);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-    transform: translateY(100%);
+  opacity: 1;
+  transition: opacity 250ms var(--kubik-rubik), transform 250ms var(--kubik-rubik);
+
+  transform: translateY(100%);
 }
-    
 
 .projects__overlay {
-    background: var(--background-overlay);
+  background: var(--background-overlay);
 }
 
-
 .overlay__text {
-    display: flex;
+  display: flex;
 
-    padding: 77px 24px;
-    margin: 0;
-    @include fonts(400, 18px, 1.56, 0.03em);
-    
-    color: var(--primary-white-color);
+  padding: 77px 24px;
+  margin: 0;
+  @include fonts(400, 18px, 1.56, 0.03em);
 
-    @media screen and (min-width:320px) and (max-width:400px) {
-        padding: 30px 20px;
-        @include fonts(400, 15px, 1.5, 0.02em);
-    }
-    @media screen and (min-width:401px) and (max-width:479px) {
-        padding: 50px 24px;
-        @include fonts(400, 16px, 1.5, 0.03em);
-    }
+  color: var(--primary-white-color);
 
-    @media screen and (min-width:768px) {
-        padding: 49px 24px 77px 24px;
-    }
+  @media screen and (min-width: 320px) and (max-width: 400px) {
+    padding: 30px 20px;
+    @include fonts(400, 15px, 1.5, 0.02em);
+  }
+  @media screen and (min-width: 401px) and (max-width: 479px) {
+    padding: 50px 24px;
+    @include fonts(400, 16px, 1.5, 0.03em);
+  }
 
-    @media screen and (min-width:1200px) {
-        padding: 63px 24px;
-    }
+  @include mq(tablet) {
+    padding: 49px 24px 77px 24px;
+  }
+
+  @include mq(desktop) {
+    padding: 63px 24px;
+  }
 }

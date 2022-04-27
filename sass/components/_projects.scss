@@ -1,12 +1,12 @@
 .projects__list {
     margin: -15px;
 
-    @media screen and (max-width:767px) {
+    @include mq(mobile-only) {
       margin-bottom: -30px;
     }
     
 
-    @media screen and (min-width:768px) {
+    @include mq(tablet) {
       display: flex;
       flex-wrap: wrap;
     }
@@ -15,16 +15,16 @@
 .projects__item {
     margin: 15px;
 
-    @media screen and (max-width:767px) {
+    @include mq(mobile-only) {
       margin-bottom: 30px;
     }
 
-    @media screen and (min-width:768px) {
+    @include mq(tablet) {
       width: calc((100% / 2 - 2 * 15px);
     }
     
 
-    @media screen and (min-width:1200px) {
+    @include mq(desktop) {
       width: calc((100% / 3 - 2 * 15px);
     }
 

@@ -1,43 +1,39 @@
 .nav__link,
 .contacts__link {
-    @include fonts14(500, 14px, 1.14, 0.02em);
+  @include fonts14(500, 14px, 1.14, 0.02em);
 }
-
 
 .nav__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px; 
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-    color: var(--title-text-color);
-    transition: color 250ms var(--kubik-rubik);
+  color: var(--title-text-color);
+  transition: color 250ms var(--kubik-rubik);
 
-     &:hover,
-     &:focus{
+  &:hover,
+  &:focus {
     color: var(--accent-color);
-}
-
+  }
 }
 .contacts__link {
-    
-    fill: currentColor;
+  fill: currentColor;
 
-    color: var(--primare-text-color);
-    transition: color 250ms var(--kubik-rubik);
+  color: var(--primare-text-color);
+  transition: color 250ms var(--kubik-rubik);
 
-    &:hover,
-    &:focus{
+  &:hover,
+  &:focus {
     color: var(--accent-color);
-    } 
-     @media screen and (min-width:1200px) {
-      padding-top: 32px;
-      padding-bottom: 32px; 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    @media screen and (max-width:1200px) {
-      @include fonts14(500, 12px, 1.17, 0.02em);
-    }
-    
+  }
+  @include mq(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include mq(notDesktop) {
+    @include fonts14(500, 12px, 1.17, 0.02em);
+  }
 }

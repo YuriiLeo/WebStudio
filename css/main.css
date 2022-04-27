@@ -118,7 +118,7 @@ img {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 480px;
   }
@@ -197,7 +197,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .logo {
     font-weight: 700;
     font-size: 24px;
@@ -277,7 +277,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
   .contacts__link {
     font-weight: 500;
     font-size: 12px;
@@ -299,7 +299,7 @@ img {
   z-index: 9;
   opacity: 0;
   transform: translateX(100%);
-  transition: transform 250ms ease,  opacity 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -355,7 +355,7 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .menu-contacts__item:first-child {
     font-size: 34px;
   }
@@ -396,7 +396,7 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .header__container {
@@ -419,7 +419,7 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .nav__list {
     display: none;
   }
@@ -434,7 +434,7 @@ img {
 }
 
 .curent::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -449,7 +449,7 @@ img {
   margin-left: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .contacts {
     display: none;
   }
@@ -710,7 +710,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero {
     width: 480px;
   }
@@ -770,7 +770,7 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero__modal {
     width: 450px;
     height: 609px;
@@ -831,7 +831,7 @@ img {
 
 .icon-open {
   opacity: 1;
-  transition: transform 250ms ease,  opacity 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease;
 }
 
 .header-btn.is-active .icon-open {
@@ -840,7 +840,7 @@ img {
 
 .icon-close {
   opacity: 0;
-  transition: transform 250ms ease,  opacity 250ms ease;
+  transition: transform 250ms ease, opacity 250ms ease;
 }
 
 .header-btn.is-active .icon-close {
@@ -899,7 +899,7 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .hang__subtitle {
     text-align: center;
   }
@@ -912,7 +912,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .about {
     display: none;
   }
@@ -1076,7 +1076,7 @@ img {
   margin: -15px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .cliens__list {
     flex-wrap: wrap;
   }
@@ -1119,7 +1119,7 @@ img {
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .footer .container {
     text-align: center;
   }
@@ -1204,7 +1204,7 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .subscribe {
     margin-top: 60px;
   }
@@ -1220,7 +1220,7 @@ img {
   margin-top: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .subscribe__wrapper {
     display: flex;
     flex-direction: column;
@@ -1280,7 +1280,7 @@ img {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .portfolio__list {
     margin-top: -15px;
     flex-wrap: wrap;
@@ -1304,7 +1304,7 @@ img {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .portfolio__item {
     margin-top: 15px;
   }
@@ -1342,7 +1342,7 @@ img {
   margin: -15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .projects__list {
     margin-bottom: -30px;
   }
@@ -1359,7 +1359,7 @@ img {
   margin: 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .projects__item {
     margin-bottom: 30px;
   }

@@ -1,37 +1,37 @@
 .logo {
-    display: block;
+  display: block;
 
-    color: var(--accent-color);
-    font-family: var(--secondary-font);
+  color: var(--accent-color);
+  font-family: var(--secondary-font);
 
-    @media screen and (max-width:1199px) {
-        @include fonts(700, 24px, 1.17, 0.03em);
-    }
-    @include fonts(700, 26px, 1.2, 0.03em);
+  @include mq(notDesktop) {
+    @include fonts(700, 24px, 1.17, 0.03em);
+  }
+  @include fonts(700, 26px, 1.2, 0.03em);
 
-    &--dark {
+  &--dark {
     color: var(--title-text-color);
-    }
+  }
 
-    &--light {
+  &--light {
     color: var(--primary-white-color);
-    }
+  }
 }
 .logo__header {
-    padding-top: 16px;
-    padding-bottom: 16px; 
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-    @media screen and (min-width:768px) {
-        padding-top: 26px;
-        padding-bottom: 26px; 
-    }
+  @include mq(tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 
-    @media screen and (min-width:1200px) {
-        padding-top: 24px;
-        padding-bottom: 25px; 
-    } 
+  @include mq(desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .logo__footer {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
