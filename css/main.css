@@ -36,6 +36,7 @@
 .link {
   text-decoration: none;
   outline: transparent;
+  color: currentColor;
 }
 
 h1,
@@ -44,6 +45,10 @@ h3,
 h4,
 p {
   margin-top: 0;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
 
 body {
@@ -210,8 +215,22 @@ img {
 }
 
 .logo__header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .logo__footer {
@@ -265,6 +284,103 @@ img {
     line-height: 1.17;
     letter-spacing: 0.02em;
   }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-first);
+  width: 100vw;
+  height: 100vh;
+  max-width: 480px;
+  z-index: 9;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 250ms ease,  opacity 250ms ease;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu.is-open {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-nav__item {
+  margin-bottom: 32px;
+}
+
+.menu-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.menu__group {
+  margin-top: auto;
+}
+
+.menu-contacts {
+  margin-bottom: 64px;
+}
+
+.menu-contacts__item:first-child {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .menu-contacts__item:first-child {
+    font-size: 34px;
+  }
+}
+
+.menu-contacts__item:last-child {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primare-text-color);
+}
+
+.menu-social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-right: -10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.menu-social_item {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.menu-social_link {
+  display: block;
+}
+
+.menu-social_item:not(:last-child) .menu-social_link {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .header {
@@ -342,6 +458,13 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    width: 16px;
+    height: 12px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts__item + .contacts__item {
     margin-top: 10px;
@@ -351,6 +474,13 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__item + .contacts__item {
     margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item + .contacts__item .contacts__icon {
+    width: 10px;
+    height: 16px;
   }
 }
 
@@ -621,17 +751,11 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 350px;
+  width: 100vw;
   padding: 40px;
   background-color: var(--background-first);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-
-@media screen and (min-width: 401px) and (max-width: 479px) {
-  .hero__modal {
-    width: 400px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -672,24 +796,43 @@ img {
   height: 18px;
 }
 
-.header__mini-btn {
+.header-btn {
   display: inline-flex;
   height: 40px;
   width: 40px;
   border: none;
   background-color: transparent;
+  z-index: 10;
 }
 
 @media screen and (min-width: 768px) {
-  .header__mini-btn {
+  .header-btn {
     display: none;
   }
 }
 
-.header__mini-btn:hover .projects__overlay,
-.header__mini-btn:focus .projects__overlay {
+.header-btn:hover .projects__overlay,
+.header-btn:focus .projects__overlay {
   opacity: 1;
   transform: translateY(0);
+}
+
+.icon-open {
+  opacity: 1;
+  transition: transform 250ms ease,  opacity 250ms ease;
+}
+
+.header-btn.is-active .icon-open {
+  opacity: 0;
+}
+
+.icon-close {
+  opacity: 0;
+  transition: transform 250ms ease,  opacity 250ms ease;
+}
+
+.header-btn.is-active .icon-close {
+  opacity: 1;
 }
 
 .hang {

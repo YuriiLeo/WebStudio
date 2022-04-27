@@ -69,7 +69,13 @@
     &:hover,
     &:focus {
     fill: currentColor;
-}
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 16px;
+        height: 12px;
+    }
+
 }
 
 .contacts__item +.contacts__item {
@@ -79,5 +85,12 @@
 
     @media screen and (min-width:1200px) {
         margin-left: 50px;
+    }
+
+    .contacts__icon {
+      @media screen and (min-width:1200px) {
+        width: 10px;
+        height: 16px;
+        }
     }
 }

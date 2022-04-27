@@ -29,12 +29,14 @@
 }
 } 
 
-.header__mini-btn {
+.header-btn {
     display: inline-flex;
     height: 40px;
     width: 40px;
     border: none;
     background-color: transparent;
+
+    z-index: 10;
 
     @media screen and (min-width:768px) {
         display: none;
@@ -44,5 +46,29 @@
     &:focus .projects__overlay {
     opacity: 1;
     transform: translateY(0);
+    }
+
+    &__icon {
+
+    }
 }
+
+.icon-open {
+  opacity: 1;
+   transition: transform 250ms ease, 
+   opacity 250ms ease;
+}
+
+.header-btn.is-active .icon-open {
+  opacity: 0;
+}
+
+.icon-close {
+  opacity: 0;
+   transition: transform 250ms ease, 
+   opacity 250ms ease;
+}
+
+.header-btn.is-active .icon-close {
+  opacity: 1;
 }

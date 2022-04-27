@@ -11,6 +11,7 @@
 .link {
     text-decoration: none;
     outline: transparent;
+    color: currentColor;
 }
 
 h1,
@@ -21,3 +22,8 @@ p {
   margin-top: 0;
 }
 
+// без прокрутки
+
+.no-scroll {
+  overflow-y: hidden;
+}
