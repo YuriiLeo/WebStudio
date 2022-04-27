@@ -326,6 +326,10 @@ img {
   color: var(--title-text-color);
 }
 
+.menu-nav__link:hover, .menu-nav__link:focus {
+  color: var(--accent-color);
+}
+
 .menu__group {
   margin-top: auto;
 }
