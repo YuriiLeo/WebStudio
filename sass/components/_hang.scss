@@ -22,14 +22,14 @@
 .hang__thumb {
     padding: 0;
     border: none;
-    background-color: var(--background-third);
+    background-color: $background-third;
     height: 120px;
     // width: 270px;
     border-radius: 4px;
     margin-bottom: 30px;
 
     @extend %flex;
-    fill: var(--title-text-color);
+    fill: $title-text-color;
 
 }
 .hang__icon {
@@ -40,7 +40,7 @@
 
 .hang__subtitle {
     margin-bottom: 10px;
-    color: var(--title-text-color);
+    color: $title-text-color;
     @include fonts14(700, 14px, 1.14);
     text-transform: uppercase;
 

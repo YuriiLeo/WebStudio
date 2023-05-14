@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
 
-  background: var(--background-first);
+  background: $background-first;
 
   width: 100vw;
   height: 100vh;
@@ -32,22 +32,22 @@
 
   @include fonts(500, 40px, 1.17, 0.02em);
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
 .menu-nav__link {
   @include fonts(500, 40px, 1.17, 0.02em);
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -63,7 +63,7 @@
   @include fonts(500, 24px, 1.17, 0.02em);
   margin-bottom: 32px;
 
-  color: var(--accent-color);
+  color: $accent-color;
 
   @include mq(tablet) {
     font-size: 34px;
@@ -73,18 +73,19 @@
 .menu-contacts__item:last-child {
   @include fonts(500, 24px, 1.17, 0.02em);
 
-  color: var(--primare-text-color);
+  color: $primare-text-color;
 }
 
 .menu-social {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: -10px;
   margin-right: -10px;
 
   @include fonts(500, 18px, 1.22, 0.02em);
 
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .menu-social__item {

@@ -1,8 +1,8 @@
 .logo {
   display: block;
 
-  color: var(--accent-color);
-  font-family: var(--secondary-font);
+  color: $accent-color;
+  font-family: $secondary-font;
 
   @include mq(notDesktop) {
     @include fonts(700, 24px, 1.17, 0.03em);
@@ -10,11 +10,11 @@
   @include fonts(700, 26px, 1.2, 0.03em);
 
   &--dark {
-    color: var(--title-text-color);
+    color: $title-text-color;
   }
 
   &--light {
-    color: var(--primary-white-color);
+    color: $primary-white-color;
   }
 }
 .logo__header {

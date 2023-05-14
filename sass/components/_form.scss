@@ -18,7 +18,7 @@
   @include fonts(700, 20px, 1.5, 0.03em);
   text-align: center;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
   margin: 0;
   padding: 0;
   margin-bottom: 12px;
@@ -43,28 +43,28 @@
   padding-left: 42px;
   outline: transparent;
 
-  color: var(--primare-text-color);
+  color: $primare-text-color;
 
   @include border(rgba(33, 33, 33, 0.2));
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition: border 250ms var(--kubik-rubik);
+  transition: border 250ms $kubik-rubik;
   &:hover,
   &:focus,
   &:checked {
-    @include border(var(--accent-color));
+    @include border($accent-color);
   }
   &:hover ~ .form__icon--sign,
   &:focus ~ .form__icon--sign {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 
 .form__label {
   @include fonts(400, 12px, 1.17, 0.01em);
 
-  color: var(--primare-text-color);
+  color: $primare-text-color;
 }
 
 .form__icon {
@@ -78,8 +78,8 @@
   &--sign {
     width: 18px;
     height: 18px;
-    fill: var(--title-text-color);
-    transition: fill 250ms var(--kubik-rubik);
+    fill: $title-text-color;
+    transition: fill 250ms $kubik-rubik;
   }
   &--check {
     left: 0;
@@ -87,7 +87,7 @@
     height: 15px;
     border: 2px solid #2a2a2a;
     border-radius: 4px;
-    fill: var(--background-first);
+    fill: $background-first;
     @include mq(desktop) {
       left: 12px;
     }
@@ -99,7 +99,7 @@
   margin-top: 4px;
   margin-bottom: 20px;
   @include fonts14(null, 14px, 1.14, 0.01em);
-  color: var(--primare-text-color);
+  color: $primare-text-color;
   padding: 12px 14px;
 
   resize: none;
@@ -120,9 +120,9 @@
   overflow: hidden;
 
   &:checked ~ .form__icon--check {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
+    fill: $accent-color;
+    border-color: $accent-color;
+    background-color: $accent-color;
     background-origin: border-box;
     background-size: contain;
   }
@@ -133,7 +133,7 @@
 
   padding-left: 24px;
 
-  color: var(--primare-text-color);
+  color: $primare-text-color;
   @include mq(desktop) {
     @include fonts14;
     padding-left: 35px;
@@ -141,6 +141,6 @@
 }
 
 .form__link {
-  color: var(--accent-color);
+  color: $accent-color;
   outline: transparent;
 }

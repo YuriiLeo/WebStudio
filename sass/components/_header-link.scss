@@ -8,23 +8,23 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-text-color);
-  transition: color 250ms var(--kubik-rubik);
+  color: $title-text-color;
+  transition: color 250ms $kubik-rubik;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 .contacts__link {
   fill: currentColor;
 
-  color: var(--primare-text-color);
-  transition: color 250ms var(--kubik-rubik);
+  color: $primare-text-color;
+  transition: color 250ms $kubik-rubik;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   @include mq(desktop) {
     padding-top: 32px;

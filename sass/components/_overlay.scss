@@ -6,13 +6,13 @@
   height: 100%;
 
   opacity: 1;
-  transition: opacity 250ms var(--kubik-rubik), transform 250ms var(--kubik-rubik);
+  transition: opacity 250ms $kubik-rubik, transform 250ms $kubik-rubik;
 
   transform: translateY(100%);
 }
 
 .projects__overlay {
-  background: var(--background-overlay);
+  background: $background-overlay;
 }
 
 .overlay__text {
@@ -22,7 +22,7 @@
   margin: 0;
   @include fonts(400, 18px, 1.56, 0.03em);
 
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 
   @media screen and (min-width: 320px) and (max-width: 400px) {
     padding: 30px 20px;

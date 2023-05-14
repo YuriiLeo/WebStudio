@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    transition: box-shadow 250ms var(--kubik-rubik);
+    transition: box-shadow 250ms $kubik-rubik;
 
     &:hover,
     &:focus {
@@ -63,14 +63,14 @@
 .projects__title {
     margin-bottom: 4px;
 
-    color: var(--title-text-color);
+    color: $title-text-color;
     @include fonts(700, 18px, 2, 0.06em);
 }
 
 .projects__text {
     margin-bottom: 0;
 
-    color: var(--primare-text-color);
+    color: $primare-text-color;
     @include fonts16(null, 16px, 1.88, 0.03em);
 }
 

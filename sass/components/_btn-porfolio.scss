@@ -30,13 +30,13 @@
 }
 
 .portfolio__btn {
-  @include btn(var(--title-text-color), var(--background-third));
+  @include btn($title-text-color, $background-third );
 
   display: inline-block;
   text-align: center;
   @include border(transparent);
-  transition: color 250ms var(--kubik-rubik), background-color 250ms var(--kubik-rubik),
-    box-shadow 250ms var(--kubik-rubik);
+  transition: color 250ms $kubik-rubik, background-color 250ms $kubik-rubik,
+    box-shadow 250ms $kubik-rubik;
 
   @include fonts16(500, 16px, 1.62, 0.03em);
   padding: 6px 22px;
@@ -44,8 +44,8 @@
 
   &:hover,
   &:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+    color: $primary-white-color;
+    background-color: $accent-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
